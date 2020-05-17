@@ -1,6 +1,5 @@
 $(document).ready(function () {
   const amenities = {};
-  const list1 = [];
   const ids = [];
   $('input[type="checkbox"]').click(function () {
     if ($(this).prop('checked') === true) {
@@ -10,6 +9,7 @@ $(document).ready(function () {
     }
 //    console.log(amenities);
     const H4 = $(this).closest('.amenities').find('h4');
+    const list1 = [];
     for (const i in amenities) {
       list1.push(i);
       ids.push(amenities[i]);
